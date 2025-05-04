@@ -34,7 +34,7 @@ Este script en Python contiene la resolución de ocho ejercicios básicos de pro
 
 ---
 
-## ▶ Ejecución
+##  Ejecución
 
 Este script requiere Python 3 y se ejecuta desde consola o terminal. Para iniciar, solo debes ejecutar:
 
