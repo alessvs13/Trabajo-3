@@ -42,7 +42,7 @@ Este script requiere Python 3 y se ejecuta desde consola o terminal. Para inicia
 python Puntos_17-24.py
 ```
 
-Asegúrate de tener permisos de lectura sobre el archivo y de introducir correctamente los datos solicitados en cada ejercicio.
+Asegurar tener permisos de lectura sobre el archivo y de introducir correctamente los datos solicitados en cada ejercicio.
 
 ---
 
