@@ -1,0 +1,92 @@
+#Tarea dos 
+
+#Punto 17
+
+suma_cuadrados = 0
+
+for i in range(1, 101):  # Del 1 al 100 (inclusive)
+    suma_cuadrados += i ** 2
+
+print("La suma de los cuadrados de los cien primeros números naturales es:", suma_cuadrados)
+
+#Punto 18
+
+numero = int(input("Introduce un número entero: "))
+suma = 0
+
+for i in range(1, 101):
+    suma += numero + i
+
+print("La suma de los 100 números siguientes es:", suma)
+
+#Punto 19
+
+euros = float(input("Introduce la cantidad en euros: "))
+tasa_cambio = 1.10  # Puedes cambiarla por la actual
+dolares = euros * tasa_cambio
+
+print("La cantidad equivalente en dólares es:", dolares)
+
+#Punto 20
+
+altura = float(input("Introduce la altura del rectángulo: "))
+anchura = float(input("Introduce la anchura del rectángulo: "))
+area = altura * anchura
+
+print("El área del rectángulo es:", area)
+
+#Punto 21
+
+num1 = int(input("Introduce el primer número: "))
+num2 = int(input("Introduce el segundo número: "))
+
+if num1 > num2:
+    print(f"{num1} es mayor y {num2} es menor.")
+elif num1 < num2:
+    print(f"{num2} es mayor y {num1} es menor.")
+else:
+    print("Ambos números son iguales.")
+
+#Punto 22
+
+numero = int(input("Introduce un número entero: "))
+
+print("Números impares menores que", numero, ":")
+for i in range(1, numero, 2):  # Empieza en 1, va de 2 en 2 hasta el número
+    print(i)
+
+#Punto 23
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+# Leer desde teclado
+num1 = int(input("Introduce el primer número: "))
+num2 = int(input("Introduce el segundo número: "))
+
+resultado = gcd(num1, num2)
+print("El máximo común divisor (GCD) es:", resultado)
+
+#Punto 24
+
+import math
+
+a = float(input("Introduce el coeficiente a: "))
+b = float(input("Introduce el coeficiente b: "))
+c = float(input("Introduce el coeficiente c: "))
+
+discriminante = b**2 - 4*a*c
+
+if a == 0:
+    print("No es una ecuación de segundo grado.")
+elif discriminante < 0:
+    print("La ecuación no tiene soluciones reales.")
+elif discriminante == 0:
+    x = -b / (2 * a)
+    print("La ecuación tiene una única solución:", x)
+else:
+    x1 = (-b + math.sqrt(discriminante)) / (2 * a)
+    x2 = (-b - math.sqrt(discriminante)) / (2 * a)
+    print("Las soluciones de la ecuación son:", x1, "y", x2)
